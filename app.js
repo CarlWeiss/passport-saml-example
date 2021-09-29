@@ -7,6 +7,10 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const session = require('express-session');
 const errorhandler = require('errorhandler');
+const dotenv = require('dotenv');
+
+// load configuration vars
+dotenv.config()
 
 var env = process.env.NODE_ENV || 'development';
 const config = require('./config/config')[env];

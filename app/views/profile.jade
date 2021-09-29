@@ -4,9 +4,16 @@ block content
 	h1 Profile
 
 	dl
-		dt Display name
-		dd #{user.displayName}
+		dt First Name
+		dd #{user.firstName}
+		dt Last Name
+		dd #{user.lastName}
 		dt Email
 		dd #{user.email}
+		dt Org Name
+		dd #{user.orgName}
+		dt SF ID
+		dd #{user.id}
+
 
 	a(href="/logout") Logout

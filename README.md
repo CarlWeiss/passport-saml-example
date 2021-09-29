@@ -1,41 +1,43 @@
 PassportJS SAML example
-=======================
-
-[![Build Status](https://travis-ci.org/gbraad/passport-saml-example.svg?branch=master)](https://travis-ci.org/gbraad/passport-saml-example)
-[![Code Climate](https://codeclimate.com/github/gbraad/passport-saml-example/badges/gpa.svg)](https://codeclimate.com/github/gbraad/passport-saml-example)
+        =======================
 
 
-Description
------------
+        Description
+        -----------
 
-An example to demonstrate the use of the [Passport-SAML](https://github.com/bergie/passport-saml) Authentication provider for PassportJS.
-
-
-Usage
------
-
-```bash
-$ npm install
-$ bower install
-$ npm start
-```
+        An example to demonstrate the use of the [Passport-SAML](https://github.com/bergie/passport-saml) Authentication provider for PassportJS linked to a SF IDP.
 
 
-Authors
--------
+        Setup
+        -----
 
-| [!["Gerard Braad"](http://gravatar.com/avatar/e466994eea3c2a1672564e45aca844d0.png?s=60)](http://gbraad.nl "Gerard Braad <me@gbraad.nl>") |
-|---|
-| [@gbraad](https://twitter.com/gbraad) |
+        ```bash
+        $ npm install
+        $ bower install
+        $ npm start
+        ```
+
+        Changes
+        Update passport.js to extend the user object to display data
+
+        Salesforce Configuration
+        Steps:
+        1. Setup SF as an IDP
+        2. Create a connected APP
+        3. Create an .env file based on the .SMAPLE_ENV template 
+        4. Connected APP SAML cofiguration
+        5. Authorize users to connect to the app
+        6. Configure any custom attributes under the Connected App
+        7. Extend the passport.js object to view the extended data.
 
 
-License
--------
+        License
+        -------
 
-Licensed under the MIT license
+        Licensed under the MIT license
 
 
-Note
-----
+        Note
+        ----
 
-Based on [PassportJS-Authentication](https://github.com/DanialK/PassportJS-Authentication) by [Danial Khosravi](http://danialk.github.io/)
+        Based on [PassportJS-Authentication](https://github.com/DanialK/PassportJS-Authentication) by [Danial Khosravi](http://danialk.github.io/) and (http://gbraad.nl "Gerard Braad <me@gbraad.nl>")

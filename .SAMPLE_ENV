@@ -1,0 +1,14 @@
+#set ENVs
+NODE_ENV=development
+# Port to start the webservice on
+PORT=3000
+# values are pulled from in the https://ORG.my.salesforce.com/.well-known/samlidp/CONNECTED_APP_NAME.xml file on the connected app
+#
+SAML_PATH=/login/callback
+SAML_ISSUER=passport-saml
+# Copied from the md:SingleSignOnService  redirect
+SAML_ENTRY_POINT=https://XXXXXXXXXXXXXXXXXXXX.my.salesforce.com/idp/endpoint/HttpRedirect
+# Copied of the md:NameIDFormat node
+SAML_NAME_ID_FORMAT=urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified
+# Copied of the ds:X509Certificate node
+SAML_CERT=
